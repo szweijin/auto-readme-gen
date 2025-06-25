@@ -1,7 +1,5 @@
 # Auto README Generator (自動 README 生成器)
 
------
-
 ## 專案簡介
 
 `Auto README Generator` 是一個強大且易於使用的 Python 工具，旨在自動化 GitHub 專案的 `README.md` 檔案生成過程。它能掃描您的專案目錄結構和部分文件內容，並利用 Google Gemini API 或 OpenAI API 的強大能力，為您的專案生成一份清晰、專業且格式良好的 README 文件。
@@ -12,7 +10,6 @@
   * 為現有專案更新或補充 README 內容。
   * 節省手動撰寫 README 的時間和精力。
 
------
 
 ## 主要功能
 
@@ -23,7 +20,6 @@
   * **命令行介面 (CLI)**：提供簡潔的命令行指令，方便整合到您的開發工作流程中。
   * **自訂輸出檔名**：您可以指定生成的 README 檔案名稱，例如 `README.md` 或 `my_project_readme.md`。
 
------
 
 ## 安裝指南
 
@@ -68,7 +64,6 @@
         ```
         這種模式允許您修改原始碼而無需重新安裝。
 
------
 
 ## API 金鑰設定
 
@@ -84,7 +79,6 @@ OPENAI_API_KEY="您的OpenAI API 金鑰"
 
 **重要提示**：**請將 `.env` 檔案加入您專案的 `.gitignore` 中，確保您的 API 金鑰不會被上傳到 GitHub！**
 
------
 
 ## 使用方式
 
@@ -128,7 +122,6 @@ gen-readme-openai <您的專案路徑> [--output <輸出檔名>] [--model <OpenA
         gen-readme-openai "/path/to/your/project" --output README.md --model gpt-4
         ```
 
------
 
 ## 專案結構概述
 
@@ -144,16 +137,12 @@ auto-readme-gen/
 └── requirements.txt              # 專案依賴套件列表
 ```
 
------
 
 ## 貢獻指南
 
 歡迎任何形式的貢獻！如果您有任何改進建議、功能請求或發現 Bug，請隨時透過 GitHub Issues 或 Pull Requests 提出。
 
------
 
 ## 版權宣告
 
 本專案採用 MIT 授權協議 - 詳情請見 `LICENSE` 檔案。
-
------
