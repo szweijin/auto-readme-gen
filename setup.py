@@ -1,16 +1,17 @@
 from setuptools import setup, find_packages
+import os
 
 setup(
-    name="auto-readme-gen", # 套件名稱
+    name="auto-readme-gen",
     version="0.1.0",
     author="Your Name",
     author_email="your.email@example.com",
     description="A tool to automatically generate README.md using Gemini or OpenAI APIs.",
     long_description=open("README.md").read() if os.path.exists("README.md") else "",
     long_description_content_type="text/markdown",
-    url="https://github.com/your-username/auto-readme-gen", # 替換為您的 GitHub 專案 URL
-    package_dir={"": "src"}, # 指示 setuptools 在 src 目錄中尋找套件
-    packages=find_packages(where="src"), # 自動尋找 src/ 下的所有套件
+    url="https://github.com/szweijin/auto-readme-gen.git",
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
     install_requires=[
         "google-generativeai",
         "openai",

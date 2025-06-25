@@ -50,22 +50,24 @@ def generate_readme_openai_content(project_summary, project_name, model_name="gp
         return None
 
     prompt = f"""
-    Please generate a comprehensive README.md for a GitHub project.
-    The project name is '{project_name}'.
-    Here is a summary of the project structure and some file contents:
+    請為這個 GitHub 專案生成一份**繁體中文**的完整 README.md。
+    專案名稱是 '{project_name}'。
+    這是專案結構與部分檔案內容的摘要：
 
     {project_summary}
 
-    The README should include:
-    1.  A clear, concise title.
-    2.  A brief project description.
-    3.  Features.
-    4.  Installation instructions (assuming Python/pip requirements).
-    5.  Usage examples.
-    6.  Project structure overview.
-    7.  Contributing guidelines (brief).
-    8.  License (MIT or similar, general placeholder).
-    Use Markdown formatting. Ensure the content is well-structured and easy to read.
+    README 應包含以下項目：
+    1.  清晰簡潔的標題。
+    2.  簡短的專案描述。
+    3.  主要功能。
+    4.  安裝指南。
+    5.  使用說明。
+    6.  專案結構概述。
+    7.  功能概述。
+    8.  技術棧。
+    9.  貢獻指南（簡要說明）。
+    10.  版權宣告（例如 MIT 或類似的通用範本）。
+    請使用 Markdown 格式。確保內容結構良好且易於閱讀。
     """
     print(f"Generating README using OpenAI API ({model_name})...")
     try:
