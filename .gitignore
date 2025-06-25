@@ -1,0 +1,30 @@
+# Python specific files
+*.pyc
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.env
+.venv/
+venv/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+.python-version
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Distribution / Build files
+dist/
+build/
+*.egg-info/
+.coverage
+.tox/
+
+# Log files
+*.log
